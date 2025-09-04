@@ -1,0 +1,27 @@
+{
+    "homepage": "https://github.com/yuru7/HackGen",
+    "description": "a composite font of Hack and GenJyuu-Gothic",
+    "license": {
+        "identifier": "OFL-1.1",
+        "url": "https://github.com/yuru7/HackGen/blob/master/LICENSE.txt"
+    },
+    "depends": [
+        "jp-util-font"
+    ],
+    
+    "version": "2.10.0",
+    "url": "https://github.com/yuru7/HackGen/releases/download/v2.10.0/HackGen_v2.10.0.zip",
+    "hash": "ed182e2a4b95792d94dea7932f6b45280b5ae353651be249d5f6b7867b788db7",
+    "checkver": "github",
+
+    "installer": {
+        "script": "jp-util-font $true $dir '*.TTF'"
+    },
+    "uninstaller": {
+        "script": "jp-util-font $false $dir '*.TTF'"
+    },
+    "autoupdate": {
+        "url": "https://github.com/yuru7/HackGen/releases/download/v$version/HackGen_v$version.zip",
+        "extract_dir": "HackGen_v$version"
+    }
+}

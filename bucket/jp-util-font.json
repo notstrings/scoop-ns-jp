@@ -1,0 +1,10 @@
+{
+    "description": "Font installer/uninstaller script for scoop-for-jp bucket. modified by 31873",
+    "license": "MIT",
+
+    "version": "0.1.5",
+    "url": "http://nas0001:3333/Public/scoop-bucket/raw/branch/main/bucket/psutil/font.ps1",
+    "hash": "2f9b94ee3395c09bb83b3207b13c9c176d769f6224af7177c00566c0a7484994",
+
+    "bin": [ ["font.ps1", "jp-util-font"] ]
+}

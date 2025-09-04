@@ -1,0 +1,16 @@
+{
+    "homepage": "https://www.vector.co.jp/soft/winnt/business/se255894.html",
+    "description": "Electronic seal for an office software.",
+    "version": "1.7",
+    "license": "Freeware",
+    "url": "https://dforest.watch.impress.co.jp/library/c/clipstamp/10893/ClipstampZ.zip",
+    "hash": "c9ed87e7942b1c82b7780feeb9a2708255435df6235bf132217bfc69e7f3ccd0",
+    "extract_dir": "ClipstampZ\\ClipstampUSB",
+    "bin": "Clipstamp.exe",
+    "shortcuts": [
+        [
+            "Clipstamp.exe",
+            "Clipstamp"
+        ]
+    ]
+}
