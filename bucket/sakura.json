@@ -12,19 +12,11 @@
         "15F58DD292AA6FC8FD592FA97A75D58B5680DDF7AA66BA10A2DD5C9F0EE159C1"
     ],
     "bin": "sakura.exe",
-    "pre_install": [
-        "if(!(Test-Path(\"$persist_dir\"))) { New-Item \"$persist_dir\" -type directory | Out-Null; if ($?) { New-Item \"$persist_dir\\init.tmp\" -type file | Out-Null } }",
-        "if(!(Test-Path(\"$persist_dir\\sakura.ini\"))) { New-Item \"$persist_dir\\sakura.ini\" -type file | Out-Null }"
-    ],
-    "post_install": "if(Test-Path(\"$persist_dir\\init.tmp\")) { Remove-Item \"$dir\\sakura.ini\" -Force | Out-Null; Remove-Item \"$persist_dir\\init.tmp\" -Force | Out-Null; }",
-    "uninstaller": {
-        "script": "if (Test-Path \"$dir\\sakura.ini\") { Copy-Item \"$dir\\sakura.ini\" \"$persist_dir\" -Force }"
-    },
     "persist": "sakura.ini",
     "shortcuts": [
         [
             "sakura.exe",
-            "sakura-editor"
+            "sakura"
         ]
     ],
     "checkver": {

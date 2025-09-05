@@ -30,9 +30,6 @@
         "url": "https://forest.watch.impress.co.jp/library/software/diskinfo/",
         "re": "<dd>v(\\d+\\.\\d+\\.\\d+.\\d+)"
     },
-    "pre_install": [
-        "if(!(Test-Path(\"$dir\\DiskInfo3.ini\"))) { New-Item \"$dir\\DiskInfo3.ini\" | Out-Null }"
-    ],
     "autoupdate": {
         "architecture": {
             "64bit": {

@@ -24,15 +24,6 @@
         "BunBackup.ini",
         "BunBackup.env"
     ],
-    "pre_install": [
-        "function CreateEmptyFile($name) {",
-        "    if (!(Test-Path \"$persist_dir\\$name\")) {",
-        "        New-Item -Path \"$dir\\$name\" -ItemType File | Out-Null",
-        "    }",
-        "}",
-        "CreateEmptyFile BunBackup.ini",
-        "CreateEmptyFile BunBackup.env"
-    ],
     "checkver": {
         "url": "http://nagatsuki.la.coocan.jp/bunbackup/download.htm",
         "re": "download/BunBackup(\\d)(\\d{2}).zip",

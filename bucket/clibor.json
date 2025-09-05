@@ -19,47 +19,13 @@
         "frmt.dat",
         "ww.dat",
         "ch",
-        "ct",
-        "clb_ex.bat",
-        "migemo.dll",
-        "dict"
-    ],
-    "pre_install": [
-        "function CreateEmptyFile($name) {",
-        "    if (!(Test-Path \"$persist_dir\\$name\")) {",
-        "        New-Item -Path \"$dir\\$name\" -ItemType File | Out-Null",
-        "        New-Item -Path \"$dir\\$name.empty\" -ItemType File | Out-Null",
-        "    }",
-        "}",
-        "CreateEmptyFile Clibor.xml",
-        "CreateEmptyFile excl.dat",
-        "CreateEmptyFile frmt.dat",
-        "CreateEmptyFile ww.dat",
-        "CreateEmptyFile clb_ex.bat",
-        "CreateEmptyFile migemo.dll"
-    ],
-    "post_install": [
-        "function RemoveEmptyFile($name) {",
-        "    if (Test-Path \"$dir\\$name.empty\") {",
-        "        Remove-Item -Path \"$dir\\$name\"",
-        "        Remove-Item -Path \"$persist_dir\\$name\"",
-        "    }",
-        "}",
-        "RemoveEmptyFile Clibor.xml",
-        "RemoveEmptyFile excl.dat",
-        "RemoveEmptyFile frmt.dat",
-        "RemoveEmptyFile ww.dat",
-        "Remove-Item \"$dir\\*.empty\"",
-        "if (!(Test-Path \"$dir\\Clibor.xml\")) {",
-        "    Write-Host \"The config and data files seem not to have been created yet.\" -ForeGroundColor DarkYellow",
-        "    Write-Host \"You may need to create hard links manually after the first run.\" -ForeGroundColor DarkYellow",
-        "}"
+        "ct"
     ],
     "checkver": {
         "url": "https://chigusa-web.com/clibor/history/",
         "re": "ver (\\d[\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://dforest.watch.impress.co.jp/library/c/clibor/10713/clibor.zip"
+        "url": "https://chigusa-web.com/en/dl/clibor-latest/#/dl.zip"
     }
 }
