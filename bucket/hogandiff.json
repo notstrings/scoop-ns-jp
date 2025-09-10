@@ -3,29 +3,25 @@
   "description": "方眼Diff (hogandiff) - Excelファイル比較ツール",
   "homepage": "https://github.com/nmby/hogandiff4",
   "license": "MIT",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/nmby/hogandiff4/releases/download/v0.26.2/hogandiff-0.26.2-win-x64.zip",
-      "hash": "7380E4B8AF6ACA676BD709F0CEC4492B5C45BE0C347DE47D5C69D022A74CBEF6",
-      "extract_dir": "hogandiff-0.26.2-win-x64",
-      "shortcuts": [
-        ["hogandiff.exe", "HoganDiff"]
-      ],
-      "bin": [
-        "hogandiff.exe"
-      ]
-    }
-  },
+  "url": "https://github.com/nmby/hogandiff4/releases/download/v0.26.2/hogandiff-0.26.2-win-x64.zip",
+  "hash": "7380E4B8AF6ACA676BD709F0CEC4492B5C45BE0C347DE47D5C69D022A74CBEF6",
+  "extract_dir": "hogandiff-0.26.2-win-x64",
+  "shortcuts": [
+    ["hogandiff.exe", "HoganDiff"]
+  ],
+  "bin": [
+    "hogandiff.exe"
+  ],
   "persist": [],
   "checkver": {
     "url": "https://github.com/nmby/hogandiff4/releases",
     "regex": "href=.*/tag/v([0-9.]+)"
   },
   "autoupdate": {
-    "architecture": {
-      "64bit": {
-        "url": "https://github.com/nmby/hogandiff4/releases/download/v$version/hogandiff-$version-win-x64.zip"
-      }
-    }
+    "url": "https://github.com/nmby/hogandiff4/releases/download/v$version/hogandiff-$version-win-x64.zip",
+    "hash": {
+      "method": "sha256"
+    },
+    "extract_dir": "hogandiff-$version-win-x64"
   }
 }
